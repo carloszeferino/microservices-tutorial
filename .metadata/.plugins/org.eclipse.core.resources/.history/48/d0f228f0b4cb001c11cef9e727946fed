@@ -1,0 +1,6 @@
+package com.car.microservice.services;
+
+@Service
+public class CarService {
+
+}

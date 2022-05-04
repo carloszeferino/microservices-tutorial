@@ -1,0 +1,6 @@
+package com.car.microservice.entity;
+
+@Entity
+public class Car {
+
+}

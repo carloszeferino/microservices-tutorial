@@ -1,0 +1,8 @@
+package com.car.microservice.repository;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ICarRepository extends JpaRepository<Car, Integer>{
+
+}

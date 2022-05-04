@@ -1,0 +1,5 @@
+package com.car.microservice.controllers;
+
+public class CarController {
+
+}

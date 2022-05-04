@@ -1,0 +1,20 @@
+package com.usuario.microservice.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.usuario.microservice.services.UserService;
+
+@RestController
+@RequestMapping("/usuario")
+public class UserController {
+
+	@Autowired
+	private UserService userService;
+	
+	public ResponseEntity<List<User>> getUsers(){
+		List<User> users = userService.getAll();
+		if(users)
+	}
+}

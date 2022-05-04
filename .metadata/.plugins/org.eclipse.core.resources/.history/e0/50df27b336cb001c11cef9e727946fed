@@ -1,0 +1,19 @@
+package com.usuario.microservice.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.usuario.microservice.repository.IUserRepository;
+
+@Service
+public class UserService {
+
+	@Autowired
+	private IUserRepository userRepository;
+	
+	private List<User> getAll(){
+		return userRepository.findAll();
+	}
+}

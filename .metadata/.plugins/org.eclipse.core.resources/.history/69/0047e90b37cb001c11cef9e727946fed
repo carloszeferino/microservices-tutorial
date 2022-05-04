@@ -1,0 +1,6 @@
+package com.usuario.microservice.controller;
+
+@RestController
+public class UserController {
+
+}

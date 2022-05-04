@@ -1,0 +1,10 @@
+package com.usuario.microservice.models;
+
+public class Motorcycle {
+	
+	private String brand;
+	private String model;
+	
+	
+
+}

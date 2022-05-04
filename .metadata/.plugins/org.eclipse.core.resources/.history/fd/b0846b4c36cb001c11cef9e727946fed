@@ -1,0 +1,5 @@
+package com.usuario.microservice.repository;
+
+public interface IUserRepository {
+
+}

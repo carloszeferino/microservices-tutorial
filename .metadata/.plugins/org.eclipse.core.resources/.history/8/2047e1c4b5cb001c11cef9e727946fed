@@ -1,0 +1,15 @@
+package com.car.microservice.controllers;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.car.microservice.services.CarService;
+
+@RestController
+@RequestMapping("/cars")
+public class CarController {
+	
+	@Autowired
+	private CarService carService;
+
+}

@@ -1,0 +1,10 @@
+package com.moto.microservice.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+
+@Repository
+public interface IMotoRepository  extends JpaRepository<Motorcycle, Integer>{
+
+}

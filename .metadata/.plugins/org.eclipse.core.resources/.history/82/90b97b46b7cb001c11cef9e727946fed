@@ -1,0 +1,6 @@
+package com.moto.microservice.repository;
+
+@Repository
+public interface IMotoRepository {
+
+}

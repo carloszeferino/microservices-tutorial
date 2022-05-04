@@ -1,0 +1,5 @@
+package com.car.microservice.repository;
+
+public interface ICarRepository {
+
+}

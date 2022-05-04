@@ -1,0 +1,5 @@
+package com.usuario.microservice.feignclients;
+
+public interface IMotoFeignClient {
+
+}

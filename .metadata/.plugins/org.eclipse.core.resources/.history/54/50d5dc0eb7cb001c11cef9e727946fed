@@ -1,0 +1,6 @@
+package com.moto.microservice.entity;
+
+@Entity
+public class Motorcycle {
+
+}

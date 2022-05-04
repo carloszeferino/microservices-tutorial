@@ -1,0 +1,5 @@
+package com.moto.microservice.controllers;
+
+public class MotoController {
+
+}
