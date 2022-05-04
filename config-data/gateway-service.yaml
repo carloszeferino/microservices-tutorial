@@ -15,15 +15,15 @@ spring:
         locator:
           enabled: true
       routes:
-        -id: usuario-microservice
-        uri: lb://USUARIO-MICROSERVICE
+        -id: user-microservice
+        uri: lb://USER-MICROSERVICE
         predicates:
           - Path=/users/**
         -id: car-microservice
         uri: lb://CAR-MICROSERVICE
         predicates:
           - Path=/cars/**
-        -id: moto-microservice
-        uri: lb://MOTO-MICROSERVICE
+        -id: motorcycle-microservice
+        uri: lb://MOTORCYCLE-MICROSERVICE
         predicates:
           - Path=/motos/**
