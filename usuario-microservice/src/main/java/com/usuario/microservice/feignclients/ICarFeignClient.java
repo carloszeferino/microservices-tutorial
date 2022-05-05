@@ -20,4 +20,5 @@ public interface ICarFeignClient {
 	
 	@GetMapping("/user/{userId}")
 	public List<Car> getCars(@PathVariable("userId") int userId);
+	
 }
