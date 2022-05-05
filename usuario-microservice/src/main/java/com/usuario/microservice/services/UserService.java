@@ -46,13 +46,15 @@ public class UserService {
 	//REST TEMPLATE quedo comentado
 	public List<Car> getCars(int userId){
 		//List<Car> cars = restTemplate.getForObject("http://localhost:8082/cars/user/"+ userId, List.class);
-		List<Car> cars = carFeignClient.getCars(userId);
+		List<Car> cars = restTemplate.getForObject("http://car-microservice/cars/user/"+userId, List.class);
+		//List<Car> cars = carFeignClient.getCars(userId);
 		return cars;
 	}
 	
 	public List<Motorcycle> getMotos(int userId){
 		//List<Motorcycle> motos = restTemplate.getForObject("http://localhost:8083/motos/user/"+ userId, List.class);
-		List<Motorcycle>motos = motoFeignClient.getMotos(userId);
+		List<Motorcycle> motos = restTemplate.getForObject("http://motorcycle-microservice/motos/user/"+userId, List.class);
+		//List<Motorcycle>motos = motoFeignClient.getMotos(userId);
 		return motos;
 	}
 	
